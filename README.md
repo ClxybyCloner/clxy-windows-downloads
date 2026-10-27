@@ -1,9 +1,9 @@
 <h1 align="center">CLXY | Cloner Xray</h1>
 <p align="center">Windows desktop downloads, release notes, and installation guide.</p>
 <p align="center">
-  <a href="https://github.com/ClxybyCloner/clxy-windows-downloads/releases/download/v1.0.3/CLXY-1.0.3-Windows-Setup-x64.exe"><strong>Download CLXY 1.0.3 for Windows x64</strong></a>
+  <a href="https://github.com/ClxybyCloner/clxy-windows-downloads/releases/download/v1.0.4/CLXY-1.0.4-Windows-Setup-x64.exe"><strong>Download CLXY 1.0.4 for Windows x64</strong></a>
   &nbsp; · &nbsp;
-  <a href="https://github.com/ClxybyCloner/clxy-windows-downloads/releases/tag/v1.0.3">Release details</a>
+  <a href="https://github.com/ClxybyCloner/clxy-windows-downloads/releases/tag/v1.0.4">Release details</a>
   &nbsp; · &nbsp;
   <a href="#verify-your-download">Verify your download</a>
 </p>
@@ -19,15 +19,15 @@
 
 | Item | Details |
 | --- | --- |
-| Release | **1.0.3** |
-| App version | `1.0.3+117` |
+| Release | **1.0.4** |
+| App version | `1.0.4+118` |
 | Platform | Windows x64 |
-| Installer | [`CLXY-1.0.3-Windows-Setup-x64.exe`](https://github.com/ClxybyCloner/clxy-windows-downloads/releases/download/v1.0.3/CLXY-1.0.3-Windows-Setup-x64.exe) |
-| Exact file size | 18,040,769 bytes |
+| Installer | [`CLXY-1.0.4-Windows-Setup-x64.exe`](https://github.com/ClxybyCloner/clxy-windows-downloads/releases/download/v1.0.4/CLXY-1.0.4-Windows-Setup-x64.exe) |
+| Exact file size | 18,391,380 bytes |
 | Code signing | Unsigned; no Authenticode certificate |
 | Checksums | [`CHECKSUMS.txt`](CHECKSUMS.txt) |
 
-This repository is a **binary-download and documentation channel**. It does not mirror the application source code. The EXE is attached to the [GitHub Release](https://github.com/ClxybyCloner/clxy-windows-downloads/releases/tag/v1.0.3), rather than stored in the repository's file history.
+This repository is a **binary-download and documentation channel**. It does not mirror the application source code. The EXE is attached to the [GitHub Release](https://github.com/ClxybyCloner/clxy-windows-downloads/releases/tag/v1.0.4), rather than stored in the repository's file history.
 
 GitHub's **Code > Download ZIP** and automatically generated **Source code** archives contain this repository's documentation. They are not the Windows installer. Choose the `.exe` release asset above.
 
@@ -43,7 +43,7 @@ The upstream proxy is TCP-only and accepts web ports **80, 443, 8080, and 8443**
 
 The intended target is **Windows 10 or Windows 11 on an x64 PC**. This release does not include an ARM64 or 32-bit Windows package. The release check was a Windows-runner smoke test, not a broad OS or hardware compatibility certification.
 
-1. Download the [Windows x64 EXE](https://github.com/ClxybyCloner/clxy-windows-downloads/releases/download/v1.0.3/CLXY-1.0.3-Windows-Setup-x64.exe).
+1. Download the [Windows x64 EXE](https://github.com/ClxybyCloner/clxy-windows-downloads/releases/download/v1.0.4/CLXY-1.0.4-Windows-Setup-x64.exe).
 2. [Check its SHA-256](#verify-your-download) before running it.
 3. Open the installer and follow its prompts. The installer is intended for the current Windows user.
 4. Launch **CLXY | Cloner Xray** from the installer or Start menu.
@@ -62,13 +62,13 @@ Only proceed if you trust this repository and the downloaded file matches the ch
 Open PowerShell in the folder containing the downloaded EXE and run:
 
 ```powershell
-Get-FileHash -Algorithm SHA256 -LiteralPath .\CLXY-1.0.3-Windows-Setup-x64.exe
+Get-FileHash -Algorithm SHA256 -LiteralPath .\CLXY-1.0.4-Windows-Setup-x64.exe
 ```
 
 The `Hash` must match this value (letter case does not matter):
 
 ```text
-6c0a39b365101fd4d38ef5614cff464aadb0fb201366a9a11edf0e68ee2e3ef9
+18837e6823424580f685762a6b88d7db50a64267eab7bea0d655d99896d72b12
 ```
 
 If it differs, do not run the file. Download it again from this repository's release page. Microsoft documents the command in [Get-FileHash](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-filehash).
@@ -80,12 +80,13 @@ The release candidate passed these checks before publication:
 | Check | Result |
 | --- | --- |
 | Flutter static analysis | Passed |
-| Automated Flutter tests | 122 passed |
-| Windows installer build | Passed |
+| Automated Flutter tests | 123 passed |
+| Web Logs sanitizer tests | 2 passed |
+| Go static analysis and tests | Passed |
+| Windows x64 installer build and AMD64 checks | Passed |
+| Bundled legal assets, including Inter and Vazirmatn notices | Passed, byte-for-byte |
 | Real installation on a Windows runner | Passed |
-| Installed app launch and visible window | Passed |
-| Bundled core launch from the installed location | Passed |
-| Local core HTTP endpoint response | Passed |
+| Installed app window, real core, and local HTTP endpoint | Passed |
 | Installed Go notice files compared with their release source | 37 files matched byte-for-byte |
 | Real uninstallation and app/core/shortcut removal | Passed |
 
