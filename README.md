@@ -35,7 +35,7 @@ GitHub's **Code > Download ZIP** and automatically generated **Source code** arc
 
 CLXY is an independent, unofficial Windows desktop client with a Flutter interface and a bundled Go core. The app starts its local core and communicates with it over loopback. The package includes the sign-in/onboarding interface, desktop integration, and required legal notices.
 
-CLXY is not an official Mozilla or Firefox product. Its inherited account and network implementation depends on a Firefox Account and an external upstream service. Publishing this installer does not provide an account or guarantee service access.
+CLXY is an independent third-party client; account and upstream-service access are external dependencies. Publishing this installer does not provide an account or guarantee service access.
 
 The upstream proxy is TCP-only and accepts web ports **80, 443, 8080, and 8443**. UDP-dependent applications and other ports may not work. Do not assume that every application's traffic is protected merely because the desktop app is open.
 
