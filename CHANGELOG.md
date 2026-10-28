@@ -1,5 +1,21 @@
 # Release history
 
+## 1.0.6 (app version 1.0.6+120)
+
+- Resizing a Windows window keeps the desktop dashboard instead of switching to phone navigation. The compact layout was tested at 930×860 and 805×560 client sizes; Ctrl+plus and Ctrl-minus adjust zoom.
+- Proxy and System Proxy, quota, the connection control, Download and Upload, Location, and Total Traffic stay on the desktop dashboard.
+- The functional core, backend, authentication flow, and required legal notices are unchanged.
+- All 133 Flutter tests passed, including updater checks. Windows package and legal-asset checks passed. The real install test confirmed a visible app window, a ready local core, and successful uninstallation. All 37 third-party notice files matched byte-for-byte.
+
+The installer is unsigned. Real account sign-in and live VPN/proxy traffic were not tested.
+
+SHA-256:
+
+```text
+5251a68c812924cda9f9e0613145aeb797e0b49ebd51f7555f33267990f9b790  CLXY-1.0.6-Windows-Setup-x64.exe
+f3e4a3bb31e356fcbfc493a00caa50f59727d04ff5d5aefee0fa13cc1dedf290  CLXY-1.0.6-Windows-x64.zip
+```
+
 ## 1.0.5 (app version 1.0.5+119)
 
 - Proxy and System Proxy share one control. Usage and quota appear at the top; Location and Total Traffic sit below.
