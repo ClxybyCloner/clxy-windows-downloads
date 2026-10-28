@@ -1,5 +1,22 @@
 # Release history
 
+## 1.0.5 (app version 1.0.5+119)
+
+- Proxy and System Proxy share one control. Usage and quota appear at the top; Location and Total Traffic sit below.
+- The connection circle is larger and centered, with more space around the status text. Cards have faded, borderless edges.
+- CLXY now checks this repository's latest stable release and shows a dismissible update notice. Downloading and installing an update remain the user's choice.
+- The release includes both the Windows x64 installer and a portable ZIP. Required legal notices, the functional core, and authentication are unchanged.
+- Flutter analysis and 132 Flutter tests passed. Web sanitizer and Go checks passed. Windows installation, the visible app window, real local core readiness, legal payload checks, and uninstallation passed.
+
+The installer is unsigned. Real account sign-in and live VPN/proxy traffic were not tested.
+
+SHA-256:
+
+```text
+66b34089208d1174abcebd0d75114884b751f99f0fe9a40f91fd11befbacee9b  CLXY-1.0.5-Windows-Setup-x64.exe
+7c038177002da703458ffc9a921e40310d39ee4a4b3bb1ac2f7413870f9df51d  CLXY-1.0.5-Windows-x64.zip
+```
+
 ## 1.0.4 (app version 1.0.4+118)
 
 The dashboard was tested in an 805×560 logical viewport for Surface Go 2. Press Ctrl+plus or Ctrl-minus to change zoom. While disconnected, the center shows Connect. After a successful connection, it shows the globe and route.

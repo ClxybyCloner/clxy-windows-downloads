@@ -1,9 +1,9 @@
 <h1 align="center">CLXY | Cloner Xray</h1>
 <p align="center">Windows desktop downloads, release notes, and installation guide.</p>
 <p align="center">
-  <a href="https://github.com/ClxybyCloner/clxy-windows-downloads/releases/download/v1.0.4/CLXY-1.0.4-Windows-Setup-x64.exe"><strong>Download CLXY 1.0.4 for Windows x64</strong></a>
+  <a href="https://github.com/ClxybyCloner/clxy-windows-downloads/releases/download/v1.0.5/CLXY-1.0.5-Windows-Setup-x64.exe"><strong>Download CLXY 1.0.5 for Windows x64</strong></a>
   &nbsp; · &nbsp;
-  <a href="https://github.com/ClxybyCloner/clxy-windows-downloads/releases/tag/v1.0.4">Release details</a>
+  <a href="https://github.com/ClxybyCloner/clxy-windows-downloads/releases/tag/v1.0.5">Release details</a>
   &nbsp; · &nbsp;
   <a href="#verify-your-download">Verify your download</a>
 </p>
@@ -19,17 +19,19 @@
 
 | Item | Details |
 | --- | --- |
-| Release | **1.0.4** |
-| App version | `1.0.4+118` |
+| Release | **1.0.5** |
+| App version | `1.0.5+119` |
 | Platform | Windows x64 |
-| Installer | [`CLXY-1.0.4-Windows-Setup-x64.exe`](https://github.com/ClxybyCloner/clxy-windows-downloads/releases/download/v1.0.4/CLXY-1.0.4-Windows-Setup-x64.exe) |
-| Exact file size | 18,391,380 bytes |
+| Installer | [`CLXY-1.0.5-Windows-Setup-x64.exe`](https://github.com/ClxybyCloner/clxy-windows-downloads/releases/download/v1.0.5/CLXY-1.0.5-Windows-Setup-x64.exe) |
+| Installer size | 18,395,982 bytes |
+| Portable ZIP | [`CLXY-1.0.5-Windows-x64.zip`](https://github.com/ClxybyCloner/clxy-windows-downloads/releases/download/v1.0.5/CLXY-1.0.5-Windows-x64.zip) |
+| Portable ZIP size | 22,402,537 bytes |
 | Code signing | Unsigned; no Authenticode certificate |
-| Checksums | [`CHECKSUMS.txt`](CHECKSUMS.txt) |
+| Checksums | [`SHA256SUMS.txt`](https://github.com/ClxybyCloner/clxy-windows-downloads/releases/download/v1.0.5/SHA256SUMS.txt); [checksum history](CHECKSUMS.txt) |
 
-This repository is a **binary-download and documentation channel**. It does not mirror the application source code. The EXE is attached to the [GitHub Release](https://github.com/ClxybyCloner/clxy-windows-downloads/releases/tag/v1.0.4), rather than stored in the repository's file history.
+This repository is a **binary-download and documentation channel**. It does not mirror the application source code. The installer and portable ZIP are attached to the [GitHub Release](https://github.com/ClxybyCloner/clxy-windows-downloads/releases/tag/v1.0.5), rather than stored in the repository's file history.
 
-GitHub's **Code > Download ZIP** and automatically generated **Source code** archives contain this repository's documentation. They are not the Windows installer. Choose the `.exe` release asset above.
+GitHub's **Code > Download ZIP** and automatically generated **Source code** archives contain this repository's documentation. They are not the Windows installer. Choose the installer `.exe` or portable Windows `.zip` release asset above, not a source-code archive.
 
 ## What CLXY is
 
@@ -43,13 +45,17 @@ The upstream proxy is TCP-only and accepts web ports **80, 443, 8080, and 8443**
 
 The intended target is **Windows 10 or Windows 11 on an x64 PC**. This release does not include an ARM64 or 32-bit Windows package. The release check was a Windows-runner smoke test, not a broad OS or hardware compatibility certification.
 
-1. Download the [Windows x64 EXE](https://github.com/ClxybyCloner/clxy-windows-downloads/releases/download/v1.0.4/CLXY-1.0.4-Windows-Setup-x64.exe).
+1. Download the [Windows x64 EXE](https://github.com/ClxybyCloner/clxy-windows-downloads/releases/download/v1.0.5/CLXY-1.0.5-Windows-Setup-x64.exe).
 2. [Check its SHA-256](#verify-your-download) before running it.
 3. Open the installer and follow its prompts. The installer is intended for the current Windows user.
 4. Launch **CLXY | Cloner Xray** from the installer or Start menu.
 5. Read the account and network limitations above before trying to sign in or connect.
 
 The normal installation folder is `%LOCALAPPDATA%\Programs\CLXY`. The app keeps its account data, settings, and logs in a `user-data` folder beside the installed app. Treat that folder as private.
+
+### Portable copy
+
+Download the [portable Windows ZIP](https://github.com/ClxybyCloner/clxy-windows-downloads/releases/download/v1.0.5/CLXY-1.0.5-Windows-x64.zip), verify its SHA-256, extract the `CLXY` folder, and run `clxy.exe`. Keep the folder writable; the app stores its private `user-data` beside the executable.
 
 ### Windows security warnings
 
@@ -59,16 +65,18 @@ Only proceed if you trust this repository and the downloaded file matches the ch
 
 ## Verify your download
 
-Open PowerShell in the folder containing the downloaded EXE and run:
+Open PowerShell in the folder containing your download. Run the command for the file you downloaded:
 
 ```powershell
-Get-FileHash -Algorithm SHA256 -LiteralPath .\CLXY-1.0.4-Windows-Setup-x64.exe
+Get-FileHash -Algorithm SHA256 -LiteralPath .\CLXY-1.0.5-Windows-Setup-x64.exe
+Get-FileHash -Algorithm SHA256 -LiteralPath .\CLXY-1.0.5-Windows-x64.zip
 ```
 
-The `Hash` must match this value (letter case does not matter):
+Each `Hash` must match the corresponding entry below (letter case does not matter):
 
 ```text
-18837e6823424580f685762a6b88d7db50a64267eab7bea0d655d99896d72b12
+66b34089208d1174abcebd0d75114884b751f99f0fe9a40f91fd11befbacee9b  CLXY-1.0.5-Windows-Setup-x64.exe
+7c038177002da703458ffc9a921e40310d39ee4a4b3bb1ac2f7413870f9df51d  CLXY-1.0.5-Windows-x64.zip
 ```
 
 If it differs, do not run the file. Download it again from this repository's release page. Microsoft documents the command in [Get-FileHash](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-filehash).
@@ -80,7 +88,7 @@ The release candidate passed these checks before publication:
 | Check | Result |
 | --- | --- |
 | Flutter static analysis | Passed |
-| Automated Flutter tests | 123 passed |
+| Automated Flutter tests | 132 passed |
 | Web Logs sanitizer tests | 2 passed |
 | Go static analysis and tests | Passed |
 | Windows x64 installer build and AMD64 checks | Passed |
@@ -98,7 +106,7 @@ The sign-in/onboarding UI tests used fake APIs and synthetic data. They do not d
 
 Keep a private backup of any account data or settings you need before changing an installation. Close CLXY before replacing installed application files, and use the same installation location when updating.
 
-Use this repository's [Releases page](https://github.com/ClxybyCloner/clxy-windows-downloads/releases) to find published downloads. This download repository does not change the EXE's backend or in-app update configuration.
+Starting with 1.0.5, CLXY checks this repository's latest stable release when a check is due, about one minute after startup. It checks whether another look is due each hour; successful checks are cached for five days. Use **About** for an immediate check. A dismissible in-app notice offers **Download** for a newer version. Installed copies download the installer; portable copies download the Windows ZIP. CLXY does not install updates automatically.
 
 To remove the app, use **Windows Settings > Apps** and choose CLXY's uninstall entry. User data may remain after uninstalling, so do not assume removal erases saved account information. Delete retained data only when you no longer need it.
 
