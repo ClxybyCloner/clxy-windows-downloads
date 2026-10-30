@@ -1,5 +1,21 @@
 # Release history
 
+## 1.0.7 (app version 1.0.7+121)
+
+- The update notice now has a direct **Download** button. Installed copies download the installer; portable copies download the ZIP.
+- CLXY checks for a newer release each time a VPN connection is confirmed, including after reconnecting. It does not install updates automatically.
+- Flutter analysis and 150 Flutter tests passed. The web log-sanitizer, Go, and Windows package checks passed. The installed app started its real core, reached its loopback endpoint, opened all four tabs, and uninstalled cleanly.
+- All 37 installed third-party notice files matched the source copies byte-for-byte. The update notice was captured at 930×700 and 805×560 client sizes.
+
+The installer is unsigned. Update-feed tests used a fake response. Real account sign-in and live VPN/proxy traffic were not tested.
+
+SHA-256:
+
+```text
+5e07a95534ac0d81af882833496397363129eb42397a14c2522c38f20932b4d9  CLXY-1.0.7-Windows-Setup-x64.exe
+c6d8053b9a2a7f63e1bd7adfc120f3119b7534ace75842ab86fb093ba215cedf  CLXY-1.0.7-Windows-x64.zip
+```
+
 ## 1.0.6 (app version 1.0.6+120)
 
 - Resizing a Windows window keeps the desktop dashboard instead of switching to phone navigation. The compact layout was tested at 930×860 and 805×560 client sizes; Ctrl+plus and Ctrl-minus adjust zoom.
