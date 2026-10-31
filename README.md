@@ -1,133 +1,174 @@
-<h1 align="center">CLXY | Cloner Xray</h1>
-<p align="center">Windows desktop downloads, release notes, and installation guide.</p>
 <p align="center">
-  <a href="https://github.com/ClxybyCloner/clxy-windows-downloads/releases/download/v1.0.7/CLXY-1.0.7-Windows-Setup-x64.exe"><strong>Download CLXY 1.0.7 for Windows x64</strong></a>
-  &nbsp; · &nbsp;
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,4f8cff,7c5cff&height=210&section=header&text=CLXY&fontSize=95&fontColor=ffffff&animation=fadeIn&fontAlignY=40&desc=Cloner%20Xray%20for%20Windows&descSize=22&descAlignY=66" alt="CLXY" width="100%"/>
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=2800&pause=900&color=7C5CFF&center=true&vCenter=true&width=640&lines=Fast.+Private.+Yours.;One+click+to+connect.;Windows+x64+%E2%80%94+ready+to+run." alt="Fast. Private. Yours." />
+</p>
+
+<p align="center">
+  <a href="https://github.com/ClxybyCloner/clxy-windows-downloads/releases/latest"><img src="https://img.shields.io/github/v/release/ClxybyCloner/clxy-windows-downloads?label=latest&color=7c5cff" alt="Latest release"></a>
+  <a href="https://github.com/ClxybyCloner/clxy-windows-downloads/releases"><img src="https://img.shields.io/github/downloads/ClxybyCloner/clxy-windows-downloads/total?label=downloads" alt="Total downloads"></a>
+  <img src="https://img.shields.io/badge/Windows-10%2F11-0078D4?logo=windows&logoColor=white" alt="Windows 10/11">
+  <img src="https://img.shields.io/badge/arch-x64-4f8cff" alt="x64">
+</p>
+
+<p align="center"><b>The Windows download and update channel for the CLXY desktop app.</b><br/>
+<sub>Installer, portable ZIP, checksums, and release notes.</sub></p>
+
+<p align="center">
+  <a href="https://github.com/ClxybyCloner/clxy-windows-downloads/releases/download/v1.0.7/CLXY-1.0.7-Windows-Setup-x64.exe">⬇️ <b>Download installer: CLXY 1.0.7 (x64)</b></a><br/>
+  <a href="https://github.com/ClxybyCloner/clxy-windows-downloads/releases/download/v1.0.7/CLXY-1.0.7-Windows-x64.zip">📦 Portable ZIP (no install)</a>
+  &nbsp;·&nbsp;
   <a href="https://github.com/ClxybyCloner/clxy-windows-downloads/releases/tag/v1.0.7">Release details</a>
-  &nbsp; · &nbsp;
-  <a href="#verify-your-download">Verify your download</a>
+  &nbsp;·&nbsp;
+  <a href="#-verify-your-download">Verify your download</a>
 </p>
 
-> **Before you install:** this installer is unsigned. Windows may show an unknown-publisher or SmartScreen warning. Windows CI verified installation, app launch, and local core startup. Real account sign-in and live VPN/proxy traffic were not tested.
+> ⚠️ **Unsigned installer:** this build carries no publisher signature, so Windows may show an
+> unknown-publisher / SmartScreen warning. Windows CI verified installation, app launch, and local
+> core startup. Real account sign-in and live VPN/proxy traffic were **not** tested.
 
 <p align="center">
-  <img src="windows-preview.png" alt="CLXY running on Windows, showing its dark first-run sign-in screen with empty account fields" width="820">
+  <img src="windows-preview.png" alt="CLXY running on Windows, showing its dark first-run sign-in screen" width="820">
 </p>
-<p align="center"><sub>The installed Windows app during a launch check. This screenshot does not demonstrate successful account authentication or a working VPN connection.</sub></p>
+<p align="center"><sub>CLXY on Windows during a launch check. The screenshot shows the sign-in screen. It does not demonstrate a working VPN connection.</sub></p>
 
-## Download
+---
 
-| Item | Details |
-| --- | --- |
-| Release | **1.0.7** |
-| App version | `1.0.7+121` |
-| Platform | Windows x64 |
-| Installer | [`CLXY-1.0.7-Windows-Setup-x64.exe`](https://github.com/ClxybyCloner/clxy-windows-downloads/releases/download/v1.0.7/CLXY-1.0.7-Windows-Setup-x64.exe) |
-| Installer size | 20,147,441 bytes |
-| Portable ZIP | [`CLXY-1.0.7-Windows-x64.zip`](https://github.com/ClxybyCloner/clxy-windows-downloads/releases/download/v1.0.7/CLXY-1.0.7-Windows-x64.zip) |
-| Portable ZIP size | 24,153,118 bytes |
-| Code signing | Unsigned; no Authenticode certificate |
-| Checksums | [`SHA256SUMS.txt`](https://github.com/ClxybyCloner/clxy-windows-downloads/releases/download/v1.0.7/SHA256SUMS.txt); [checksum history](CHECKSUMS.txt) |
+## 📥 Download
 
-This repository is a **binary-download and documentation channel**. It does not mirror the application source code. The installer and portable ZIP are attached to the [GitHub Release](https://github.com/ClxybyCloner/clxy-windows-downloads/releases/tag/v1.0.7), rather than stored in the repository's file history.
+| | |
+|---|---|
+| Release | **1.0.7** (app version `1.0.7+121`) |
+| Platform | Windows 10 / 11, **x64** |
+| 🖥️ Installer | [`CLXY-1.0.7-Windows-Setup-x64.exe`](https://github.com/ClxybyCloner/clxy-windows-downloads/releases/download/v1.0.7/CLXY-1.0.7-Windows-Setup-x64.exe) · 20,147,441 bytes |
+| 📦 Portable | [`CLXY-1.0.7-Windows-x64.zip`](https://github.com/ClxybyCloner/clxy-windows-downloads/releases/download/v1.0.7/CLXY-1.0.7-Windows-x64.zip) · 24,153,118 bytes |
+| Code signing | Unsigned, no Authenticode certificate |
+| Checksums | [`SHA256SUMS.txt`](https://github.com/ClxybyCloner/clxy-windows-downloads/releases/download/v1.0.7/SHA256SUMS.txt) · [checksum history](CHECKSUMS.txt) |
 
-GitHub's **Code > Download ZIP** and automatically generated **Source code** archives contain this repository's documentation. They are not the Windows installer. Choose the installer `.exe` or portable Windows `.zip` release asset above, not a source-code archive.
+> 🗂️ This repository provides binary downloads and documentation. Installers live as
+> [Release assets](https://github.com/ClxybyCloner/clxy-windows-downloads/releases), not in git history.
+> GitHub's **Code → Download ZIP** and the auto-generated *Source code* archives contain only this
+> repo's docs. Download the `.exe` or portable `.zip` above. Do not use a source archive.
 
-## Windows dashboard resize
+---
 
-The dashboard keeps its desktop layout when the window narrows. The update notice was captured at 930×700 and 805×560 client sizes. Press Ctrl+plus or Ctrl-minus to adjust zoom.
+## ⚡ Install on Windows
 
-## What CLXY is
+1. **Download** the [installer](#-download) above.
+2. **Verify its SHA-256** ([how-to below](#-verify-your-download)) before running it.
+3. **Open it** and follow the prompts (per-user install). If SmartScreen appears, see [the security notes](#-windows-security-warnings) first.
+4. **Launch CLXY** from the installer or the Start menu.
+5. Read [what CLXY is](#-what-clxy-is) before signing in or connecting.
 
-CLXY is an independent, unofficial Windows desktop client with a Flutter interface and a bundled Go core. The app starts its local core and communicates with it over loopback. The package includes the sign-in/onboarding interface, desktop integration, and required legal notices.
+The app installs to `%LOCALAPPDATA%\Programs\CLXY` and keeps its private account data,
+settings, and logs in a `user-data` folder beside it. Treat that folder as private.
 
-CLXY is an independent third-party client; account and upstream-service access are external dependencies. Publishing this installer does not provide an account or guarantee service access.
+### 📦 Portable copy
 
-The upstream proxy is TCP-only and accepts web ports **80, 443, 8080, and 8443**. UDP-dependent applications and other ports may not work. Do not assume that every application's traffic is protected merely because the desktop app is open.
+Prefer no installer? Download the [portable ZIP](#-download), verify its hash, extract the
+`CLXY` folder, and run `clxy.exe`. Keep the folder writable. The app stores its private
+`user-data` right beside the executable.
 
-## Install on Windows
+---
 
-The intended target is **Windows 10 or Windows 11 on an x64 PC**. This release does not include an ARM64 or 32-bit Windows package. The release check was a Windows-runner smoke test, not a broad OS or hardware compatibility certification.
+## ✅ Verify your download
 
-1. Download the [Windows x64 EXE](https://github.com/ClxybyCloner/clxy-windows-downloads/releases/download/v1.0.7/CLXY-1.0.7-Windows-Setup-x64.exe).
-2. [Check its SHA-256](#verify-your-download) before running it.
-3. Open the installer and follow its prompts. The installer is intended for the current Windows user.
-4. Launch **CLXY | Cloner Xray** from the installer or Start menu.
-5. Read the account and network limitations above before trying to sign in or connect.
-
-The normal installation folder is `%LOCALAPPDATA%\Programs\CLXY`. The app keeps its account data, settings, and logs in a `user-data` folder beside the installed app. Treat that folder as private.
-
-### Portable copy
-
-Download the [portable Windows ZIP](https://github.com/ClxybyCloner/clxy-windows-downloads/releases/download/v1.0.7/CLXY-1.0.7-Windows-x64.zip), verify its SHA-256, extract the `CLXY` folder, and run `clxy.exe`. Keep the folder writable; the app stores its private `user-data` beside the executable.
-
-### Windows security warnings
-
-The installer does not carry a publisher signature. A successful installation test does not establish SmartScreen reputation or verify publisher identity.
-
-Only proceed if you trust this repository and the downloaded file matches the checksum. Do not disable Defender, antivirus protection, or an organization's security policy to install it. If you are unsure about a warning, stop. A matching hash proves that the file matches this publication; it is not a security audit.
-
-## Verify your download
-
-Open PowerShell in the folder containing your download. Run the command for the file you downloaded:
+In PowerShell, from your download folder:
 
 ```powershell
 Get-FileHash -Algorithm SHA256 -LiteralPath .\CLXY-1.0.7-Windows-Setup-x64.exe
-Get-FileHash -Algorithm SHA256 -LiteralPath .\CLXY-1.0.7-Windows-x64.zip
 ```
 
-Each `Hash` must match the corresponding entry below (letter case does not matter):
+The result must match the hash published in the
+[release notes](https://github.com/ClxybyCloner/clxy-windows-downloads/releases/tag/v1.0.7)
+and in [`CHECKSUMS.txt`](CHECKSUMS.txt):
 
 ```text
 5e07a95534ac0d81af882833496397363129eb42397a14c2522c38f20932b4d9  CLXY-1.0.7-Windows-Setup-x64.exe
 c6d8053b9a2a7f63e1bd7adfc120f3119b7534ace75842ab86fb093ba215cedf  CLXY-1.0.7-Windows-x64.zip
 ```
 
-If it differs, do not run the file. Download it again from this repository's release page. Microsoft documents the command in [Get-FileHash](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-filehash).
+A matching hash proves the file is exactly what we published. It is *not* a security audit
+or a publisher signature.
 
-## What was actually checked
+---
 
-This release passed these checks before publication:
+## 🛡️ Windows security warnings
 
-| Check | Result |
-| --- | --- |
-| Flutter static analysis | Passed |
-| Automated Flutter tests | 150 passed |
-| Web Logs sanitizer | Passed |
-| Go static analysis and tests | Passed |
-| Windows x64 installer build and AMD64 checks | Passed |
-| Windows dashboard and update notice | Captured at 930×700 and 805×560 client sizes |
-| Bundled legal assets, including font notices | Passed, byte-for-byte |
-| Real installation on a Windows runner | Passed |
-| Installed app window, real core, and local HTTP endpoint | Passed |
-| Dock navigation across all four tabs | Passed |
-| Installed third-party notice files | 37 files matched byte-for-byte |
-| Real uninstallation and app/core/shortcut removal | Passed |
+- The installer is **unsigned**. A successful install test does not establish SmartScreen reputation or publisher identity.
+- Only proceed if you trust this repository **and** the checksum matches.
+- **Never** disable Defender, antivirus, or your organization's security policy to install it. If you're unsure about a warning, stop.
 
-The sign-in/onboarding UI tests used fake APIs and synthetic data. They do not demonstrate that a real account can authenticate.
+---
 
-**Not validated:** real provider sign-in, token validity, live VPN/proxy traffic, tunnel establishment, external routing, or external DNS behavior. No independent security audit, privacy guarantee, speed claim, or availability guarantee is made here.
+## 🔄 How updates work
 
-## Updating, backups, and removal
+CLXY checks this repository's latest stable release **after each successful VPN connection**
+(including reconnects). When a newer build is found, the app shows a notice with a
+**Download** button. Installed copies fetch the installer. Portable copies fetch the ZIP.
+Downloading and installing always stay *your* choice: **CLXY never auto-installs updates.**
 
-Keep a private backup of any account data or settings you need before changing an installation. Close CLXY before replacing installed application files, and use the same installation location when updating.
+---
 
-Starting with 1.0.5, CLXY checks for updates about a minute after startup and once an hour when a check is due; successful checks are cached for five days. It also checks immediately after each confirmed VPN connection or reconnection. If a newer version is available, the in-app notice has a **Download** button. Installed copies download the installer; portable copies download the Windows ZIP. Use **About** for a manual check. CLXY does not install updates automatically.
+## 🧭 What CLXY is
 
-To remove the app, use **Windows Settings > Apps** and choose CLXY's uninstall entry. User data may remain after uninstalling, so do not assume removal erases saved account information. Delete retained data only when you no longer need it.
+CLXY is an independent, unofficial Windows desktop client. It uses a Flutter interface with a
+bundled Go core that starts locally and talks to the app over loopback. The package includes
+the sign-in/onboarding UI, desktop integration, and the required legal notices
+([`THIRD-PARTY-NOTICES.md`](THIRD-PARTY-NOTICES.md), [`LICENSE`](LICENSE)).
 
-## Troubleshooting and feedback
+CLXY is an independent third-party client; account and upstream-service access are external
+dependencies. Publishing this installer does **not** provide an account or guarantee service
+access. The upstream proxy is TCP-only on web ports **80, 443, 8080, and 8443**. UDP-dependent
+apps and other ports may not work. Don't assume every app's traffic is protected just because
+the desktop app is open.
 
-If the app does not start, confirm that you downloaded the Windows x64 package and that its SHA-256 matches. Avoid running multiple copies from different folders while diagnosing an installation problem.
+---
 
-If sign-in or connection fails, remember that these paths were not validated against a real account or live upstream service for this release. A running app or responsive local core does not prove that the upstream connection works.
+## ❓ FAQ
 
-For reproducible installation or UI problems, [open an issue](https://github.com/ClxybyCloner/clxy-windows-downloads/issues) with the app version, Windows version, steps to reproduce, and expected versus actual behavior. Redact screenshots and logs first. Never post passwords, access tokens, cookies, recovery codes, or account-data folders in a public issue.
+**Is the source code here?**
+This repository contains only binary downloads and documentation. The app source is not published.
 
-## License and acknowledgments
+**Installer or portable?**
+Installer for a normal setup (Start-menu entry, per-user install). Portable if you want a
+folder you can carry around or run without installing.
 
-The original project's MIT copyright and permission notice is preserved verbatim in [`LICENSE`](LICENSE). CLXY's branding does not remove those obligations or the licenses of bundled dependencies.
+**Where are my settings?**
+In the `user-data` folder next to the app (installed or portable). Back it up if it matters to you.
 
-See [`THIRD-PARTY-NOTICES.md`](THIRD-PARTY-NOTICES.md) and [`THIRD-PARTY-LICENSES.txt`](THIRD-PARTY-LICENSES.txt) for the redistributed legal texts. The installed application also contains its bundled legal notices, including Flutter/Dart dependency notices, fonts, flags, artwork, and Go components. Keep those notices with any redistributed copy.
+**Windows 7 / 8 / ARM?**
+Not supported. The target is **Windows 10/11 on x64**. This release has no ARM64 or 32-bit package.
 
-See [`CHANGELOG.md`](CHANGELOG.md) for this public download channel's release history.
+**The dashboard looks cramped in a small window.**
+It keeps the desktop layout when resized. Press <kbd>Ctrl</kbd>+<kbd>+</kbd> /
+<kbd>Ctrl</kbd>+<kbd>−</kbd> to zoom.
+
+**Older versions?**
+They stay on the [Releases page](https://github.com/ClxybyCloner/clxy-windows-downloads/releases),
+with their checksums in [`CHECKSUMS.txt`](CHECKSUMS.txt).
+
+---
+
+## 📜 Release history
+
+Full notes for every build live in [`CHANGELOG.md`](CHANGELOG.md), newest first.
+
+## 💬 Support
+
+- 🌐 [clonerr.ir](https://clonerr.ir)
+- ✈️ Telegram: [@cloner42](https://t.me/cloner42)
+
+## 📄 Terms
+
+© CLXY. All rights reserved. The builds published here are free to download and use.
+Please don't re-upload them elsewhere. Link people here so they can get
+the genuine, verified build. Third-party components are listed in
+[`THIRD-PARTY-NOTICES.md`](THIRD-PARTY-NOTICES.md).
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,7c5cff,4f8cff&height=130&section=footer&animation=fadeIn" alt="" width="100%"/>
+</p>
+<p align="center"><sub>Made with 💙 for the CLXY community</sub></p>
